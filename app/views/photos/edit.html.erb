@@ -1,11 +1,6 @@
 <h1>Editing Photo</h1>
 
 <%= render 'form', photo: @photo %>
-<p>
-  <strong>Image data:</strong>
-  <%= @photo.image_data %>
-  <img src="<%= @photo.image_url %>">
 
-</p>
 <%= link_to 'Show', @photo %> |
 <%= link_to 'Back', photos_path %>
