@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
-  # get 'landing/index'
+  resources :photos
+  # get 'home/landing'
 
-  root 'landing#index'
+  root 'home#landing'
 
   devise_for :users
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
