@@ -153,6 +153,8 @@ GEM
       rubyzip (~> 1.0)
     shrine (2.7.0)
       down (~> 4.1)
+    socialization (1.2.0)
+      activerecord
     spring (2.0.2)
       activesupport (>= 4.2)
     spring-watcher-listen (2.0.1)
@@ -204,6 +206,7 @@ DEPENDENCIES
   sass-rails (~> 5.0)
   selenium-webdriver
   shrine
+  socialization
   spring
   spring-watcher-listen (~> 2.0.0)
   sqlite3

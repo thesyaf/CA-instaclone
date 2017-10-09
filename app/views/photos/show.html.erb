@@ -16,5 +16,15 @@
   <%= @photo.caption %>
 </p>
 
+<p>
+  <strong>likes:</strong>
+  <%= link_to 'like', likes_path(@photo) %>
+</p>
+
+<p>
+  <strong>Likes:</strong>
+  <%= @photo.user.likees_count %>
+</p>
+
 <%= link_to 'Edit', edit_photo_path(@photo) %> |
 <%= link_to 'Back', photos_path %>

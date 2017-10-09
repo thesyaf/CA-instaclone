@@ -1,6 +1,22 @@
 class PhotosController < ApplicationController
   before_action :set_photo, only: [:show, :edit, :update, :destroy]
 
+
+
+
+  def likes
+    @user = current_user # before_action :authenticate_user, only: [:likes]
+    @photo = Photo.find(params[:id])
+    @user.toggle_like!(@photo)
+    respond_to do |format|
+      format.html { redirect_to root_path }
+      format.js
+    end
+  end
+
+
+
+
   # GET /photos
   # GET /photos.json
   def index
@@ -72,4 +88,6 @@ class PhotosController < ApplicationController
     def photo_params
       params.require(:photo).permit(:image, :user_id, :caption)
     end
+
+
 end
