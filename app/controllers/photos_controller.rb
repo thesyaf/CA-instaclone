@@ -10,7 +10,7 @@ class PhotosController < ApplicationController
     @user.toggle_like!(@photo)
     respond_to do |format|
       format.html { redirect_to root_path }
-      format.js
+      # format.js
     end
   end
 

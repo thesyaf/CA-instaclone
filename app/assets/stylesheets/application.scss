@@ -14,7 +14,53 @@
  *= require_self
  */
 
+body {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.nav {
+  height: 52px;
+  background: #FFF;
+  padding-top: 7px;
+}
+
+.menu-icon {
+  height: 24px;
+}
+
+.feed {
+  width: 100vw;
+}
+
+// card styling
+.card {
+  padding-left: 0;
+  padding: 0;
+  border: none;
+}
+.card-body {
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.header {
+  height: 60px;
+  padding-top: 20px;
+  padding-left: 10px;
+  background-color: #efefef;
+}
 
 .card-img-top {
-  border-radius: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+
+}
+
+.like {
+  height: 24px;
+}
+
+.caption_user {
+  font-weight: bold;
 }
