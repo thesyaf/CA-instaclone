@@ -4,10 +4,18 @@
   <% @photos.reverse.each do |photo| %>
 
     <div class="card mx-auto col-12 col-sm-7">
-      <div class="header">
-        <div class="card_user">
+      <div class="header container">
+        <div class="card_user row">
           <!-- put user image here -->
-          <%= photo.user.username %>
+          <p><%= photo.user.username %></p>
+
+            <div class="dropdown-toggle justify-content-end" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <%= image_tag("icon_options.png", class: "") %>
+            </div>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Edit</a>
+              <a class="dropdown-item" href="#">Delete</a>
+            </div>
         </div>
 
       </div>
